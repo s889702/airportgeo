@@ -10,10 +10,10 @@ from twitter_stream import FilteredStream
 
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
-    consumer_key = "vdBZ7nsubfElOYBk0X7kqFbKo"
-    consumer_secret = "g6QX0iihsSpD1Mx2ojuF8sZq7VgO86B4cCyruptd4hlcYofRw8"
-    access_token = "821329451757793280-SRq3NIonOCEJVDyMHzNqvZXePQavSHN"
-    access_token_secret = "EBhi9fFocHDt8rsWKYWNypCK3K2DhSdov653L6zk8iwHy"
+    consumer_key = ""
+    consumer_secret = ""
+    access_token = ""
+    access_token_secret = ""
 
 
     rules: list = [
