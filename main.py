@@ -1,23 +1,12 @@
 # This is a sample Python script.
 # Press Shift+F10 to execute it or replace it with your code.
 # Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
-
-import tweepy
-import json
-from twitter_stream import RecentSearch
-from twitter_stream import SampledStream
 from twitter_stream import FilteredStream
-
+import time
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
-    consumer_key = ""
-    consumer_secret = ""
-    access_token = ""
-    access_token_secret = ""
-
-
     rules: list = [
-        {"value": "place:\"George Bush Intercontinental Airport (IAH)\" has:geo", "tag": "IAH"}
+        {"value": "place:\"Purdue University Airport (LAF)\" has:geo", "tag": "PUA"}
     ]
 
     # deletelist = {
@@ -35,9 +24,16 @@ if __name__ == '__main__':
     # stream.delete_rule(data=deletelist)
     print(stream.get_rules())
 
+while True:
 
-for tweet in stream.connect():
-    print(json.dumps(tweet, indent=4))
+    try:
+        for tweet in stream.connect():
+            with open('output.txt', 'a') as f:
+                print(json.dumps(tweet), file=f)
+            print(tweet)
 
+    except:
+        print("no tweet collected")
+        time.sleep(1)
 
 # See PyCharm help at https://www.jetbrains.com/help/pycharm/
