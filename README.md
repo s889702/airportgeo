@@ -1,2 +1,10 @@
 # airportgeo
 Using Twitter API V2 to stream and collect tweets' geolocation 
+
+
+keys:
+  consumer_key: H0L7ZlmBGDZREi9yHOG0D9fxE
+  consumer_secret: 7pJzP2Rgd2Xjt4Wj2W4C2wbJHCnSCFsVbeKwy09r1qXysu2MGv
+  access_token: 1474114876817743877-tGETLq2rIPWjICFsDZSephP4iiM8pK
+  access_token_secret: anKxOJiPE73Ty00XNoDhfj27BLKaK3B4zx7HzmS4HMpcb
+  bearer_token: AAAAAAAAAAAAAAAAAAAAANYVXgEAAAAABQXFo6Yk4kqOWyoWaxLZ8nu7oE0%3D34OIghhPTssgr02oGjq7NBEsMrBfISvHguvyTuVSQq5feLc8At
